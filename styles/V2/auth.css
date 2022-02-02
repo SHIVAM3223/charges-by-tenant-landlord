@@ -1,0 +1,102 @@
+.S-signUp {
+}
+
+.S-title {
+  margin: 1%;
+  width: 15%;
+  white-space: nowrap;
+  border-bottom: 5px solid #99c9e5;
+}
+
+.S-fieldContainer {
+  position: relative;
+  height: 90vh;
+}
+
+.S-signup-image {
+  position: absolute;
+  bottom: 30px;
+  width: 60%;
+  height: 30%;
+}
+
+.S-flakes-image {
+  position: absolute;
+  top: -6%;
+  left: 60%;
+  width: 7%;
+}
+
+.S-flakes2-image {
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  width: 7%;
+}
+
+.S-shifter {
+  width: 30%;
+}
+
+.S-text {
+  width: 30%;
+  position: absolute;
+  right: 0;
+}
+
+.S-fields {
+  padding: 8px;
+  margin: 15px;
+  border-top: 1px solid #8a8a8a;
+  border-right: 2px solid #8a8a8a;
+  border-bottom: 4px solid #8a8a8a;
+  box-sizing: border-box;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.S-input {
+  width: 75%;
+  border: none;
+  outline: none;
+}
+
+.S-input:focus {
+  outline: none;
+}
+
+.S-fields span {
+  margin: 0 5px 0 5px;
+}
+
+.S-lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.S-btn-signup {
+  margin: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.5vw !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+}
+
+.S-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2vw;
+}
+
+.S-signin-account {
+  font-size: 1.35vw;
+  font-weight: 750;
+  letter-spacing: 0.75;
+}
+
+.S-signin-account:hover {
+  border-bottom: 4px solid black;
+}
