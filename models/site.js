@@ -27,16 +27,12 @@ const sitesSchema = new mongoose.Schema(
       },
       country: {
         type: String,
-        required: [true, "Please enter your country"],
       },
       pincode: {
-        type: Number,
-        required: [true, "Please enter your pincode"],
-        validate: [isPostalCode, "Please enter proper pin code"],
+        type: String,
       },
       landmark: {
         type: String,
-        //not setting required as true, keeping it optional
       },
     },
 
@@ -53,15 +49,12 @@ const sitesSchema = new mongoose.Schema(
     status: {
       type: String,
       default: "0",
+      required:true
     },
 
     charges_param: {
-      electricity: {
-        type: Number,
-      },
-      water: {
-        type: Number,
-      },
+      type: Object,
+      required: true
     },
     Type: {
       enum: ["Room", "Land", "Shops"],
@@ -69,19 +62,12 @@ const sitesSchema = new mongoose.Schema(
       required: true,
     },
 
-    alloted_tenant: {
-      type: Array,
-    },
-
     history: {
       type: Array,
     },
-    tenant: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Tenant",
-    },
+
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Sites", sitesSchema);
+module.exports = mongoose.models.Site || mongoose.model("Site", sitesSchema);
